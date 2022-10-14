@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.backgroundauthor{
+  background-image: url(https://besthqwallpapers.com/Uploads/24-5-2020/134470/thumb2-library-concepts-stack-of-books-education-background-books-background-with-books.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+.backgroundimage{
+    
+background-image:url('https://cdn.theculturetrip.com/wp-content/uploads/2017/06/books-.gif');
+
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
+.contenue{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    color: #fff;
+}
+.title{
+    position: relative;
+    font-size: 14vw;
+    color: #fff;
+    -webkit-text-stroke: 0.3vw #fff;
+    text-transform: uppercase;
+    font-size: 50px ;
+    margin-bottom: 20px;
+
+}
+
+.title::before{
+    content: attr(data-text);
+    position: absolute;
+    color: black;
+    border-right: 2px solid white ;
+    -webkit-text-stroke: 0vw #fff;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    top: 0%;
+   left: 0%;
+    animation: animate 6s linear infinite;
+
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0%;
+    }
+    
+        70%,90%
+    {
+        width: 100%;
+    }
+    
+}
+
+
+.parag{
+
+  font-size: 40px;
+  padding: 30px;
+
+}
+
+
+
+.btnauthor{
+  height: 40px;
+  /* background-image: linear-gradient(rgba(238, 235, 241, 0.774), rgb(96, 96, 93)); */
+  /* color: #fff; */
+  /* font-weight: bolder; */
+  background-color: transparent;
+  border: none;
+  
+
+}
+.inputstyle{
+  width: 30%;
+  height: 40px;
+	border-style: none;
+		
+	background-color: transparent;
+
+	padding-left: 1em;
+	font-size: 1.3em;
+  margin-left: 320px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+}
+.inputstyle:focus{
+  outline: none;
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+  /* start navbar */
+  .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    
+  }
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0,5s;
+
+
+
+  }
+  .navbar ul li:hover::after{
+    width: 100%;
+
+  }
+  /* end navbar */
+
+
+
+/* start formulaire */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&dispay=swap');
+
+:root {
+  --success-color: #23cc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.loginbody {
+  background-image: url(https://besthqwallpapers.com/Uploads/24-5-2020/134470/thumb2-library-concepts-stack-of-books-education-background-books-background-with-books.jpg);
+
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.name{
+  color: black;
+  font-size: 18px;
+  margin-left: 4px;
+  width: 20%;
+}
+
+
+.price{
+
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #3a4149;
+  background: #e7ebee;
+  line-height: 1.15;
+  font-size: 16px;
+  position: absolute;
+  text-align: center;
+  margin-top: 300px;
+  width:  150px;
+  margin-left: 30px;
+ 
+
+}
+.price :hover{
+  
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+
+}
+.imgg{
+  /* margin-inline: 30px; */
+  /* width: 50%; */
+  margin-left:20px;
+  height: 75%;
+background-position: center;
+text-align: justify;
+width: 180px;
+display: block;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+justify-content: center;
+align-items: center;
+display: flex;
+
+}
+
+th{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+#tr{
+  display: flex;
+  justify-content: center;
+  margin-left: 130px;
+
+}
+
+
+
+#resultprice{
+  position: relative;
+  left: 260px;
+  color: #333333;
+  background-color: #ffffff42;
+
+  border-radius: 4px;
+  padding: 0.3em;
+  font-size: 100%;
+  width: 200px;
+  height: 50px;
+  margin-left: 170px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.a{
+
+  display: block;
+  width: 600px;
+  height: 50px;
+  line-height: 40px;
+  font-size: 25px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 2px solid rgb(1, 1, 1);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 5px;
+}
+
+.a span{
+  position: relative;
+  z-index: 2;
+}
+
+.a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: hwb(33 6% 14% / 0.99);
+  transition: all .35s;
+}
+
+.a:hover{
+  color: #fff;
+}
+
+.a:hover:after{
+  width: 100%;
+}
+
+
+
+
+
